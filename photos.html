@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  type="text/css" href="css/photos.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/photos.js"></script>
+<title>Stravarija</title>
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Header -->
+  <header>
+	<img src="images/neon-gif.gif" alt="DZ logo gif">
+  </header>
+  <!-- End header -->
+
+  <!-- Sidenav bar -->
+  <div id="sidenav">
+  	<!-- Avatar image at the corner -->
+  	<img src="images/redblue.png" alt="DZ logo" style="max-width: 100%">
+	  <a href="index.html">HOME</a>
+	  <a href="photos.html" class="current">PHOTOS</a>
+	  <a href="videos.html">VIDEOS</a>
+	  <a href="contact.html">CONTACT</a>
+  </div>
+  <!-- End sidenav bar -->
+
+  <!-- Main container -->
+  <main>
+  	<!-- Photos -->
+  	<p>Photos</p>
+  	<hr>
+
+    <!-- Photos gallery -->
+    <div class="row">
+      <div class="column">
+        <img src="images/legenda.png" alt="DZ logo" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/bluered.png" alt="DZ logo" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/logo1.png" alt="DZ logo" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/logoonblack.png" alt="DZ logo" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/redblue.png" alt="DZ logo" style="width:100%" onclick="myFunction(this);">
+      </div>
+      <div class="column">
+        <img src="images/neon.png" alt="DZ logo" style="width:100%" onclick="myFunction(this);">
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+    </div>
+    <!-- End photo gallery -->
+    <br><br><br><br>
+
+  <!-- Footer -->
+  <footer>
+    <a href="https://www.facebook.com/dusan.zaharijevic" target="_blank" id="icon1">
+      <i class="fa fa-facebook-official"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCkXQL6cuWcWfuhk_369QAAw" target="_blank">
+      <i class="fa fa-youtube"></i>
+    </a>
+    <p>&copy; Copyright Dušan Zaharijević</p>
+  </footer>
+  <!-- End footer -->
+
+  </main>
+  <!-- End main container -->
+
+</body>
+<!-- End body -->
+</html>

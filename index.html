@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet"  type="text/css" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Allerta+Stencil">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="js/index.js"></script>
+<title>Stravarija</title>
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<![endif]-->
+</head>
+
+<!-- Body -->
+<body>
+
+  <!-- Header -->
+  <header>
+	<img src="images/neon-gif.gif" alt="DZ logo gif">
+  </header>
+  <!-- End header -->
+
+  <!-- Sidenav bar -->
+  <div id="sidenav">
+  	<!-- Avatar image at the corner -->
+  	<img src="images/bluered.png" alt="DZ logo" style="max-width: 100%;">
+	<a href="index.html" class="current">HOME</a>
+	<a href="photos.html">PHOTOS</a>
+	<a href="videos.html">VIDEOS</a>
+	<a href="contact.html">CONTACT</a>
+  </div>
+  <!-- End sidenav bar -->
+
+  <!-- Nav bar visible on mobile -->
+  <div id="mySidenav" class="mobile_sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="current">HOME</a>
+	<a href="photos.html">PHOTOS</a>
+	<a href="videos.html">VIDEOS</a>
+	<a href="contact.html">CONTACT</a>
+  </div>
+
+  <span id="menu" onclick="openNav()">&#9776; Menu</span>
+  <!-- End mobile nav bar -->
+
+  <!-- Main container -->
+  <main>
+  	<!-- Photos -->
+  	<a href="photos.html"><p>Photos</p></a>
+  	<hr id="photoshr">
+
+    <!-- Animated photos -->
+    <div id="div1">
+  	  <img src="images/cover2.png" alt="DZ logo" style="max-width: 80%">
+  	</div>
+  	<div id="div2">
+  	  <img src="images/cover.png" alt="DZ logo" style="max-width: 80%">
+  	</div>
+  	<div id="div3">
+  	  <img src="images/cover3.png" alt="DZ logo" style="max-width: 80%">
+  	</div>
+  	<!-- End photos -->
+
+    <!-- Videos -->
+  	<a href="videos.html"><p>Videos</p></a>
+  	<hr style="border-width: 0.4px;">
+  	<video style="width: 80%" controls>
+      <source src="videos/What is that rhythm.mp4" type="video/mp4">
+      <source src="videos/What is that rhythm.ogg" type="video/ogg">
+      Your browser does not support HTML5 video.
+    </video>
+    <p id="video_title"><cite>DZ - What is that rhythm?</cite></p>
+  	<!-- End videos --> 
+
+  	<!-- Footer -->
+  <footer>
+    <a href="https://www.facebook.com/dusan.zaharijevic" target="_blank">
+      <i class="fa fa-facebook-official"></i>
+    </a>
+    <a href="https://www.youtube.com/channel/UCkXQL6cuWcWfuhk_369QAAw" target="_blank">
+      <i class="fa fa-youtube"></i>
+    </a>
+    <p>&copy; Copyright Dušan Zaharijević</p>
+  </footer>
+  <!-- End footer -->
+
+  </main>
+  <!-- End main container -->
+
+</body>
+<!-- End body -->
+</html>
