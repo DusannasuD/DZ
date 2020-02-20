@@ -1,0 +1,387 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+* {box-sizing: border-box;}
+
+/* Body */ 
+body, h1, h2, h3, h4, h5, h6, p {
+  font-size: 100%;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size-adjust: 0.58;
+  margin: 0;
+  padding: 0;
+}
+/* End body */
+
+/* Main */
+#sidenav {
+  width: 15%;
+  float: left;
+  background-color: #111;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#sidenav img {
+  padding-bottom: 30px; 
+}
+
+#sidenav a {
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  color: #818181;
+}
+
+#sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidenav .current {
+	color: rgb(255, 0, 0);
+}
+
+/* Mobile sidenav */
+.mobile_sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#menu {
+  display: none;
+  background-color: red;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  font-size: 20px; 
+  cursor: pointer
+}
+
+.mobile_sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile_sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mobile_sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+/* Header */
+header {
+  background-color: black;
+  width: 85%;
+  height: auto;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  padding-top: 0;
+  float: right;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35%;
+}
+
+/* Main container */
+main {
+  width: 85%;
+  background-color: powderblue;
+  clear: right;
+  float: right;
+  padding-top: 90px;
+  padding-left: 100px;
+  font-size: 1.8em; 
+  overflow: hidden;
+}
+
+main a {
+  text-decoration: none;
+  color: grey;
+}
+
+main a:hover {
+  color: rgb(191, 191, 191);
+}
+
+hr {
+  border-width: 0.3px;
+  color: white;
+  margin-right: 85%;
+  margin-bottom: 40px;
+}
+
+main img {
+  margin-left: 50px;
+  box-shadow: 3px 4px 5px grey;
+}
+
+/* Animated photos */
+#div1 {
+  position: absolute;
+  animation: animation1 20s infinite;
+}
+
+#div2 {
+  position: absolute;
+  margin-bottom: 80px;
+  animation: animation2 20s infinite;
+}
+
+#div3 {
+  margin-bottom: 80px;
+  animation: animation3 20s infinite;
+}
+
+@keyframes animation1 {
+  0% {opacity: 1;}
+  33.33% {opacity: 0;}
+  66.66% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+@keyframes animation2 {
+  0% {opacity: 0;}
+  33.33% {opacity: 1;}
+  66.66% {opacity: 0;}
+  100% {opacity: 0;}
+}
+
+@keyframes animation3 {
+  0% {opacity: 0;}
+  33.33% {opacity: 0;}
+  66.66% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+/* Video */
+video {
+	margin-left: 50px;
+	box-shadow: 3px 4px 5px grey;
+}
+
+main #video_title {
+  margin-left: 50px; 
+  font-size: 0.7em; 
+  margin-bottom: 300px; 
+  color: grey;
+}
+
+/* Footer */ 
+footer {
+	padding-bottom: 30px;
+	margin-left: -50px;
+}
+
+footer a {
+	display: inline-block;
+	padding-right: 15px;
+}
+
+footer p {
+	font-size: 0.6em;
+	color: grey;
+}
+/* End main container*/
+
+
+/* Under 1160px */ 
+@media only screen and (max-width: 1160px) {
+
+/* Sidenav bar */
+  #sidenav {
+	width: 100%;
+    height: auto;
+    position: relative;
+    background-color: black;
+  }
+
+  #sidenav img {
+  	display: none;
+  }
+
+  #sidenav a {
+  	float: left;
+  	font-size: 1.1em; 
+  	padding: 14px 16px;
+  	border-top: 0.5px solid black;
+  }
+
+  #sidenav a:hover {
+  	border-top: 0.5px solid red;
+  }
+
+  #sidenav .current {
+	background-color: rgb(255, 0, 0);
+	color: white;
+	border-top: 0.5px solid red;
+  }
+
+  #sidenav .current:hover {
+	background-color: lightcoral;
+	border-top: 0.5px solid coral;
+  }
+
+  /* Header */
+  header {
+  	width: 100%;
+  } 
+
+  /*Main container */
+  main {
+    width: 100%;
+  	padding-top: 80px;
+  	padding-left: 60px;
+  }
+
+  hr {
+  border-width: 0.4px;
+  margin-right: 80%;
+  margin-bottom: 40px;
+  }
+
+  /* Footer */
+  footer {
+  	margin-left: 0;
+  } 
+}
+
+/* Under 425px */ 
+@media only screen and (max-width: 425px) {
+
+  /* Header */
+  header img {
+  	max-width: 45%;
+  } 
+  
+  /* Sidenav menu */
+  #menu {display: block;}
+
+  #sidenav {display: none;}
+
+  /* Main container */
+  main {
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: 1.4em; 
+  }
+
+  main a {
+  	color: grey;
+  }
+
+  main img {
+	margin-left: 5%;
+  }
+
+  hr {
+    border-width: 0.2px;
+    margin-right: 70%;
+  }
+
+  /* Video */
+  video {
+	margin-left: 5%;
+  }
+}
+
+/* Under 375px */ 
+@media only screen and (max-width: 375px) {
+  /* Header */
+  header img {
+  	max-width: 50%;
+  }
+
+  /* Main container */ 
+  main #video_title {
+    margin-left: 40px; 
+  }
+
+  hr {
+    border-width: 0.3px;
+  }
+}
+
+/* Under 320px */ 
+@media only screen and (max-width: 320px) {
+  /* Header */
+  header img {
+  	max-width: 55%;
+  }
+
+  /* Main container */
+  main {
+    padding-top: 50px;
+    padding-left: 30px;
+    font-size: 1.3em; 
+  }
+
+  hr {
+    border-width: 0.4px;
+    margin-right: 68%;
+  }
+
+  #div3 {
+    margin-bottom: 60px;
+  }
+
+  main #video_title {
+    margin-left: 10%; 
+  }
+}
+
+/* Under 210px */
+@media only screen and (max-width: 210px) {
+  /* Header */
+  header img {
+  	max-width: 70%;
+  }
+
+  /* Main container */
+  main {
+    padding-top: 40px;
+    padding-left: 30px;
+    font-size: 1.1em; 
+  }
+
+  hr {
+    margin-right: 60%;
+  }
+
+  main #video_title {
+    margin-left: 0; 
+  }
+
+  #menu {
+  font-size: 18px; 
+  }
+}

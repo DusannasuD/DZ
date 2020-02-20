@@ -1,0 +1,231 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+* {box-sizing: border-box;}
+
+/* Body */ 
+body, h1, h2, h3, h4, h5, h6, p {
+  font-size: 100%;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size-adjust: 0.58;
+  margin: 0;
+  padding: 0;
+}
+/* End body */
+
+/* Main */
+#sidenav {
+  width: 15%;
+  float: left;
+  background-color: #111;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#sidenav img {
+  padding-bottom: 30px; 
+}
+
+#sidenav a {
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  color: #818181;
+}
+
+#sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidenav .current {
+	color: rgb(255, 0, 0);
+}
+
+/* Header */
+header {
+  background-color: black;
+  width: 85%;
+  height: auto;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  padding-top: 0;
+  float: right;
+}
+
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  max-width: 35%;
+}
+
+header p {
+  color: white;
+  text-align: center;
+  font-size: 7em;
+  padding-top: 90px;
+  text-shadow: 3px 4px 5px lightgrey;
+  margin-top: 0;
+}
+
+/* Main container */
+main {
+  width: 85%;
+  background-color: powderblue;
+  clear: right;
+  float: right;
+  padding-top: 90px;
+  font-size: 1.8em; 
+  overflow: hidden;
+}
+
+main p {
+  padding-left: 100px;
+  color: grey;
+}
+
+main a {
+  text-decoration: none;
+  color: grey;
+}
+
+main a:hover {
+  color: rgb(191, 191, 191);
+}
+
+hr {
+  border-width: 0.4px;
+  color: white;
+  margin-right: 75%;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+/* Photo gallery */
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 16.66%;
+  padding: 5px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+/* Footer */ 
+footer {
+  padding-bottom: 30px;
+  margin-top: 150px;
+}
+
+footer a {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#icon1 {
+  padding-left: 50px;
+}
+
+footer p {
+  font-size: 0.6em;
+  color: grey;
+  margin-left: -50px;
+}
+/* End main container*/
+
+
+/* Under 1160px */ 
+@media only screen and (max-width: 1160px) {
+/* Sidenav bar */
+  #sidenav {
+  width: 100%;
+    height: auto;
+    position: relative;
+    background-color: black;
+  }
+
+  #sidenav img {
+    display: none;
+  }
+
+  #sidenav a {
+    float: left;
+    font-size: 1.1em; 
+    padding: 14px 16px;
+    border-top: 0.5px solid black;
+  }
+
+  #sidenav a:hover {
+    border-top: 0.5px solid red;
+  }
+
+  #sidenav .current {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-top: 0.5px solid red;
+  }
+
+  #sidenav .current:hover {
+  background-color: lightcoral;
+  border-top: 0.5px solid coral;
+  }
+
+  /* Header */
+  header {
+    width: 100%;
+  } 
+
+  /*Main container */
+  main {
+    width: 100%;
+    padding-top: 80px;
+  }
+
+  hr {
+    border-width: 0.3px;
+    margin-right: 70%;
+}
+  }
+}

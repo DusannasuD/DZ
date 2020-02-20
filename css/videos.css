@@ -1,0 +1,300 @@
+header, section, footer, aside, nav, main, article, figure {
+  display: block; 
+}
+
+* {box-sizing: border-box;}
+
+/* Body */ 
+body, h1, h2, h3, h4, h5, h6, p {
+  font-size: 100%;
+  font-family: "Allerta Stencil", sans-serif;
+  font-size-adjust: 0.58;
+  margin: 0;
+  padding: 0;
+}
+/* End body */
+
+/* Main */
+#sidenav {
+  width: 15%;
+  float: left;
+  background-color: #111;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+#sidenav img {
+  padding-bottom: 30px; 
+}
+
+#sidenav a {
+  padding: 5px 30px;
+  text-decoration: none;
+  font-size: 25px;
+  display: block;
+  color: #818181;
+}
+
+#sidenav a:hover {
+  color: #f1f1f1;
+}
+
+#sidenav .current {
+	color: rgb(255, 0, 0);
+}
+
+/* Header */
+header {
+  background-color: black;
+  width: 85%;
+  height: auto;
+  margin-left: 0;
+  margin-top: 0;
+  margin-right: 0;
+  padding-top: 0;
+  float: right;
+}
+
+header img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+  max-width: 35%;
+}
+
+header p {
+  color: white;
+  text-align: center;
+  font-size: 7em;
+  padding-top: 90px;
+  text-shadow: 3px 4px 5px lightgrey;
+  margin-top: 0;
+}
+
+/* Main container */
+main {
+  width: 85%;
+  background-color: powderblue;
+  clear: right;
+  float: right;
+  padding-top: 90px;
+  font-size: 1.8em; 
+  overflow: hidden;
+  padding-left: 50px;
+}
+
+main p {
+  padding-left: 100px;
+  color: grey;
+}
+
+main a {
+  text-decoration: none;
+  color: grey;
+}
+
+main a:hover {
+  color: rgb(191, 191, 191);
+}
+
+hr {
+  border-width: 0.3px;
+  color: white;
+  margin-right: 75%;
+  margin-bottom: 40px;
+  margin-left: 100px;
+}
+
+/* Videos */
+#logogif {
+  margin-bottom: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+  box-shadow: 3px 4px 5px grey;
+  margin-bottom: 150px;
+}
+
+video {
+  margin-left: auto; 
+  margin-right: auto; 
+  display: block;  
+  box-shadow: 3px 4px 5px grey; 
+  padding-bottom: 0;
+}
+
+main .title {
+  font-size: 0.9em; 
+  color: lightcoral;
+  cursor: pointer;
+  transition: color 0.5s;
+  margin-top: 100px;
+}
+
+main .title:hover {
+  color: grey;
+}
+
+main #container1 {
+  border: 1px solid coral;
+  width: 30%; 
+  border-left: 7px solid coral;
+  transition: width 1s, border-left 1s, border-right 1s, padding-left 1s;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px; 
+}
+
+main #container1:hover {
+  width: 40%;
+  border-right: 7px solid coral;
+  padding-left: 171.3px;
+}
+
+main #container2 {
+  border: 1px solid coral;
+  width: 45%; 
+  border-right: 7px solid coral;
+  transition: width 1s, border-left 1s, border-right 1s, padding-left 1s;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 120px;
+}
+
+main #container2:hover {
+  width: 55%;
+  border-left: 7px solid coral; 
+  padding-left: 165px;
+}
+
+main #videos1 {
+  display: none;
+  margin-top: 50px;
+}
+
+main #videos2 {
+  display: none;
+  margin-top: 50px;
+}
+
+#videos1 p {
+  font-size: 0.7em;
+  margin-left: 60px; 
+  margin-bottom: 100px; 
+  margin-top: 15px;
+}
+
+#videos2 p {
+  font-size: 0.7em;
+  margin-left: 60px; 
+  margin-bottom: 100px; 
+  margin-top: 15px;
+}
+
+/* Footer */ 
+footer {
+  padding-bottom: 30px;
+  margin-top: 300px;
+}
+
+footer a {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+#icon1 {
+  padding-left: 50px;
+}
+
+footer p {
+  font-size: 0.6em;
+  color: grey;
+  margin-left: -50px;
+}
+/* End main container*/
+
+
+/* Under 1160px */ 
+@media only screen and (max-width: 1160px) {
+/* Sidenav bar */
+  #sidenav {
+  width: 100%;
+    height: auto;
+    position: relative;
+    background-color: black;
+  }
+
+  #sidenav img {
+    display: none;
+  }
+
+  #sidenav a {
+    float: left;
+    font-size: 1.1em; 
+    padding: 14px 16px;
+    border-top: 0.5px solid black;
+  }
+
+  #sidenav a:hover {
+    border-top: 0.5px solid red;
+  }
+
+  #sidenav .current {
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-top: 0.5px solid red;
+  }
+
+  #sidenav .current:hover {
+  background-color: lightcoral;
+  border-top: 0.5px solid coral;
+  }
+
+  /* Header */
+  header {
+    width: 100%;
+  } 
+
+  /*Main container */
+  main {
+    width: 100%;
+    padding-top: 80px; 
+  }
+
+  main p {
+    padding-left: 50px;
+  }
+
+  main .title {
+  font-size: 0.8em; 
+  }
+
+  hr {
+    border-width: 0.3px;
+    margin-right: 70%;
+    margin-left: 50px;
+  }
+
+  #videos1 p {
+    font-size: 0.6em;
+    margin-left: 60px; 
+    margin-bottom: 70px; 
+    margin-top: 15px;
+  }
+
+  #videos2 p {
+    font-size: 0.6em;
+    margin-left: 30px; 
+    margin-bottom: 70px; 
+    margin-top: 15px;
+  }
+
+  /* Footer */
+  #icon1 {
+  padding-left: 0;
+  }
+}
