@@ -26,7 +26,7 @@
   <!-- Sidenav bar -->
   <div id="sidenav">
   	<!-- Avatar image at the corner -->
-  	<img src="images/logo1.png" alt="DZ logo" style="max-width: 100%">
+  	<img src="images/profilna.png" alt="DZ logo" style="max-width: 100%">
 	  <a href="index.html">HOME</a>
 	  <a href="photos.html">PHOTOS</a>
 	  <a href="videos.html" class="current">VIDEOS</a>
@@ -34,16 +34,28 @@
   </div>
   <!-- End sidenav bar -->
 
+  <!-- Nav bar visible on mobile -->
+  <div id="mySidenav" class="mobile_sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html" class="current">HOME</a>
+  <a href="photos.html">PHOTOS</a>
+  <a href="videos.html">VIDEOS</a>
+  <a href="contact.html">CONTACT</a>
+  </div>
+
+  <span id="menu" onclick="openNav()">&#9776; Menu</span>
+  <!-- End mobile nav bar -->
+
   <!-- Main container -->
   <main>
   	<!-- Videos -->
   	<p>Videos</p>
   	<hr>
 
-    <img src="images/neon-gif2.gif" alt="DZ logo gif" id="logogif" style="max-width: 35%;">
+    <img src="images/profilna-neon.png" alt="DZ logo" id="logogif">
 
     <!-- DZ videos -->
-    <p class="title" id="container1">DZ</p>
+    <button class="title" id="container1">DZ</button>
 
     <!-- Susti Kerol -->
     <div id="videos1">
@@ -80,7 +92,7 @@
     </div>
     <!-- End DZ videos --> 
 
-    <p class="title" id="container2">Dušan Zaharijević</p>
+    <button class="title" id="container2">Dušan Zaharijević</button>
     
     <!-- Dušan Zaharijević -->
     <div id="videos2">
