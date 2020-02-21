@@ -1,3 +1,4 @@
+
 header, section, footer, aside, nav, main, article, figure {
   display: block; 
 }
@@ -45,6 +46,52 @@ body, h1, h2, h3, h4, h5, h6, p {
 
 #sidenav .current {
 	color: rgb(255, 0, 0);
+}
+
+/* Mobile sidenav */
+.mobile_sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+#menu {
+  display: none;
+  background-color: red;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  color: white;
+  font-size: 23px; 
+  cursor: pointer
+}
+
+.mobile_sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.mobile_sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.mobile_sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
 }
 
 /* Header */
@@ -101,7 +148,7 @@ main a:hover {
 }
 
 hr {
-  border-width: 0.4px;
+  border-width: 0.3px;
   color: white;
   margin-right: 75%;
   margin-bottom: 40px;
@@ -113,7 +160,7 @@ hr {
 /* The grid: Four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 16.66%;
+  width: 25%;
   padding: 5px;
 }
 
@@ -176,6 +223,13 @@ footer p {
 /* End main container*/
 
 
+/* Above 1440px */ 
+@media only screen and (min-width: 1440px) {
+  hr {
+    margin-right: 78%;
+  }
+}
+
 /* Under 1160px */ 
 @media only screen and (max-width: 1160px) {
 /* Sidenav bar */
@@ -224,8 +278,86 @@ footer p {
   }
 
   hr {
-    border-width: 0.3px;
-    margin-right: 70%;
+    border-width: 0.4px;
+    margin-right: 72%;
 }
+}
+
+/* Under 425px */ 
+@media only screen and (max-width: 425px) {
+
+  /* Header */
+  header img {
+    max-width: 55%;
+  } 
+  
+  /* Sidenav menu */
+  #menu {display: block;}
+
+  #sidenav {display: none;}
+
+  main p {
+    padding-left: 50px;
+  }
+
+  hr {
+    margin-right: 60%;
+    margin-left: 50px;
+  }
+
+  footer p {
+    padding-left: 100px;
+  }
+}
+
+/* Under 375px */ 
+@media only screen and (max-width: 375px) {
+  /* Header */
+  header img {
+    max-width: 65%;
+  }
+  /* Main container */
+  main {
+    padding-top: 60px; 
+  }
+
+  main p {
+    font-size: 0.9em;
+  }
+
+  hr {
+    border-width: 0.3px; 
+    margin-right: 50%;
+  }
+
+/* Photo gallery */
+  .column {
+    width: 33.33%;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .column img {
+  opacity: 1; 
+  }
+
+/* Footer */
+  footer p {
+    font-size: 0.6em;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  footer a {
+  display: inline-block;
+  padding-right: 15px;
+  font-size: 1.3em;
+  }
+
+  #icon1 {
+    padding-left: 50px;
   }
 }
