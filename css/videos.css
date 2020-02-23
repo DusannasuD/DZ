@@ -135,7 +135,7 @@ main {
 
 main p {
   padding-left: 9%;
-  color: grey;
+  color: white;
 }
 
 main a {
@@ -175,6 +175,7 @@ hr {
 }
 
 video {
+  width: 70%;
   margin-left: auto; 
   margin-right: auto; 
   display: block;  
@@ -260,7 +261,7 @@ footer a {
 }
 
 #icon1 {
-  padding-left: 50px;
+  padding-left: 45px;
 }
 
 footer p {
@@ -273,8 +274,35 @@ footer p {
 
 /* Above 1440px */ 
 @media only screen and (min-width: 1440px) {
+  /* Header */ 
+  header img {
+    max-width: 40%;
+  }
+
   #logogif {
     max-width: 50%;
+  }
+
+  hr {
+    visibility: hidden;
+  }
+
+  #videos1 p {
+    margin-left: 7%;
+  }
+
+  #videos2 p {
+    margin-left: 7%;
+  }
+
+  /* Footer */ 
+  footer a {
+    font-size: 1.8em;
+  }
+
+  footer p {
+    font-size: 0.9em;
+    margin-left: -60px;
   }
 }
 
@@ -336,31 +364,43 @@ footer p {
   hr {
     border-width: 0.4px;
     margin-right: 77%;
-    margin-left: 50px;
+    margin-left: 100px;
   }
 
   #videos1 p {
     font-size: 0.6em;
-    margin-left: 60px; 
+    margin-left: 7%; 
     margin-bottom: 70px; 
     margin-top: 15px;
   }
 
   #videos2 p {
     font-size: 0.6em;
-    margin-left: 30px; 
+    margin-left: 8%; 
     margin-bottom: 70px; 
     margin-top: 15px;
   }
 
   /* Footer */
   #icon1 {
-  padding-left: 0;
+  padding-left: 45px;
+  }
+}
+
+/* Under 1024px */ 
+@media only screen and (max-width: 1024px) {
+  hr {
+    margin-left: 90px;
   }
 }
 
 /* Under 768px */ 
 @media only screen and (max-width: 768px) {
+  /* Header */
+  header img {
+    max-width: 43%;
+  } 
+
   /* Main container */
   main {
     padding-top: 80px;
@@ -374,11 +414,25 @@ footer p {
 
   #logogif {
     max-width: 45%;
+    margin-bottom: 130px;
   }
 
   hr {
     border-width: 0.3px;
-    margin-right: 75%;
+    margin-right: 73%;
+    margin-left: 50px;
+  }
+
+  #videos1 p {
+    margin-left: 8%
+  }
+
+  #videos2 p {
+    margin-left: 6%;
+  }
+  /* Footer */
+  footer p {
+    margin-left: -5px;
   }
 }
 
@@ -387,7 +441,7 @@ footer p {
 
   /* Header */
   header img {
-    max-width: 45%;
+    max-width: 55%;
   } 
   
   /* Sidenav menu */
@@ -397,8 +451,11 @@ footer p {
 
   #logogif {
     max-width: 50%;
+    margin-bottom: 30px;
+    margin-left: 20%;
   }
 
+  /* main containrer */
   main p {
     padding-left: 0;
     padding-right: 5%;
@@ -407,6 +464,47 @@ footer p {
   hr {
     margin-left: 0;
     margin-right: 67%;
+  }
+
+  video {
+    width: 90%;
+    margin-left: 0;
+    margin-right: 0; 
+  }
+
+  main #container1 {
+    width: 20%;
+    margin-left: 20px;
+  }
+
+  main #container2 {
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 70px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-left: -40px;
+  }
+
+  footer a {
+    color: grey;
+    padding-bottom: 20px;
+    font-size: 2em;
+    padding-right: 25px;
+
+  }
+
+  footer p {
+    font-size: 0.7em;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  #icon1 {
+    padding-left: 0;
   }
 } 
 
@@ -433,11 +531,22 @@ footer p {
   #logogif {
     max-width: 60%;
     margin-bottom: 50px;
+    margin-left: 15%;
+  }
+
+  main #container1 {
+    margin-left: 15px;
+  }
+
+  main #container2 {
+    width: 43%;
+    margin-left: 15px;
+    margin-top: 70px;
   }
 
 /* Footer */
   footer p {
-    font-size: 0.6em;
+    font-size: 0.7em;
     text-align: center;
     margin-left: 0;
     margin-right: 0;
@@ -446,10 +555,94 @@ footer p {
   footer a {
   display: inline-block;
   padding-right: 15px;
-  font-size: 1.3em;
+  font-size: 1.8em;
   }
 
   #icon1 {
-    padding-left: 30px;
+    padding-left: 0;
+  }
+}
+
+/* Under 320px */ 
+@media only screen and (max-width: 320px) {
+  /* Header */
+  header img {
+    max-width: 70%;
+  }
+
+  main #container1:hover {
+    width: 30%;
+  }
+
+  main #container2 {
+    width: 45%;
+    margin-top: 60px;
+  }
+
+  main #container2:hover {
+    width: 55%;
+  }
+
+  #logogif {
+    margin-left: 13%;
+  }
+
+  video {
+    width: 100%;
+    margin-left: -7%;
+    margin-right: 5%;
+  } 
+
+  #videos1 p {
+    text-align: center;
+    margin-left: -10%;
+    padding-left: 0; 
+  }
+
+  #videos2 p {
+    text-align: center;
+    margin-left: -10%;
+    padding-left: 0; 
+  }
+
+  /* Footer */
+  footer p {
+    margin-left: auto; 
+    margin-right: auto; 
+    text-align: center;
+    font-size: 0.7em;
+  }
+
+  footer a {
+    font-size: 2em;
+  }
+}
+
+/* Under 210px */
+@media only screen and (max-width: 210px) {
+  /* Header */
+  header img {
+    max-width: 75%;
+  }
+
+  #logogif {
+    margin-left: 10%;
+  }
+
+  main #container1 {
+    margin-left: 5px;
+  }
+
+  main #container2 {
+    margin-left: 5px;
+  }
+
+  /* Footer */
+  footer p {
+    font-size: 0.6em;
+  } 
+
+  footer a {
+    font-size: 1.5em;
   }
 }
