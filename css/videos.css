@@ -580,7 +580,7 @@ footer p {
   }
 
   main #container2:hover {
-    width: 55%;
+    width: 60%;
   }
 
   #logogif {
@@ -629,12 +629,28 @@ footer p {
     margin-left: 10%;
   }
 
+  hr {
+    visibility: hidden;
+  }
+
   main #container1 {
-    margin-left: 5px;
+    margin-left: -10%;
+  }
+
+  main #container1:hover {
+    width: 50%;
   }
 
   main #container2 {
-    margin-left: 5px;
+    margin-left: -10%;
+  }
+
+  main #container2:hover {
+    width: 95%;
+  }
+
+  video {
+    margin-left: -12%;
   }
 
   /* Footer */
